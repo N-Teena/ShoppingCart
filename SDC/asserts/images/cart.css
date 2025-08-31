@@ -1,0 +1,81 @@
+.card{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 400px;
+}
+.catalog{
+    flex: 1;
+    display: grid;
+    grid-template-columns: repeat(auto-fill,minmax(250px,1fr));
+    grid:gap 1rem;
+    padding:5px;
+    
+    border-radius: 10px;
+    border:none;
+    
+}
+.product{
+     display: flex;
+     flex-direction: row;
+     justify-content: space-between;
+     align-items: center; 
+     padding: 1.5em;
+     width: 900px;
+     margin-top: 30px;
+     background-color: whitesmoke;
+     margin-left: 330px;
+}
+.product img{
+    width: 40%;
+    height: 70%;
+}
+.product p{
+    font-weight: 600;
+    width: 25%;
+    font-size: 20px;
+    margin-left: 45px;
+}
+.Product p strong {
+    display: block; 
+}
+.product button{
+    background-color : black;
+    width:30%;
+    height: 34px;;
+    border: none;
+    border-radius:10px;
+    padding: 0.5 rem;
+    cursor: pointer;
+    color:aliceblue;
+    font-size: 20px;
+}
+.product button:hover{
+    color: rgb(189, 203, 29);
+}
+body::-webkit-scrollbar {
+    display: none;
+}
+
+.Total {
+    text-align: center;
+}
+
+.Total p strong {
+    font-weight: bold;
+}
+
+.Total button.checkout {
+    background-color: rgb(18, 36, 1);
+    color: #fff;
+    width: 10%;
+    border: none;
+    border-radius: 10px;
+    padding: 0.5rem;
+    cursor: pointer;
+    margin-top: 1rem; /* Add space between button and text */
+}
+
+.Total button.checkout:hover {
+    background-color: burlywood;
+}
